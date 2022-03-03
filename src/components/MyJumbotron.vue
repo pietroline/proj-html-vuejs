@@ -1,6 +1,6 @@
 <template>
   <div> 
-      
+
   </div>
 </template>
 
@@ -12,6 +12,7 @@
 
 <style scoped>
     div{
-        background-color: red;
+        background-color: lightgray;
+        height: 20rem;
     }
 </style>

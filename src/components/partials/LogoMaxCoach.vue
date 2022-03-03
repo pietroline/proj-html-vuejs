@@ -1,8 +1,8 @@
 <template>
 
-    <div class="contenitore">
+    <a href="#" class="contenitore">
         <img src="./../../assets/img/dark-logo.png" alt="Img logo MaxCoach">
-    </div>
+    </a>
   
 </template>
 
