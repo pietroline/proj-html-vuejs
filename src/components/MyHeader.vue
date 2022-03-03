@@ -1,0 +1,34 @@
+<template>
+    <header class="container">
+       <div class="row my-2">
+           <div class="col d-flex align-items-center justify-content-between">
+               <LogoMaxCoach/>
+               <MenuHeader :menuHeader="menuHeader"/>
+               <IconeSocialHeader/>
+           </div>          
+       </div>
+    </header>
+</template>
+
+<script>
+
+    import LogoMaxCoach from "./partials/LogoMaxCoach.vue";
+    import MenuHeader from "./partials/MenuHeader.vue";
+    import IconeSocialHeader from "./partials/IconeSocialHeader.vue";
+
+    export default {
+        name: "MyHeader",
+        components:{
+            LogoMaxCoach,
+            MenuHeader,
+            IconeSocialHeader,
+        },
+        props:{
+            "menuHeader": Array,
+        }
+    }
+</script>
+
+<style>
+
+</style>
