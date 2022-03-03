@@ -1,7 +1,7 @@
 <template>
-  <div> 
-
-  </div>
+    <div class="d-flex align-items-center"> 
+        Tutto il componente è provvisorio, al momento la sua funzione è quella di separare header e footer
+    </div>
 </template>
 
 <script>
