@@ -10,12 +10,12 @@
             </div>
         </div>
 
-        <div class="row my-5">
+        <div class="text-center my-5"> 
+            <h4 class="titleTestimonials">Testimonials</h4>
+            <h4 class="fs-3">Why do people love me?</h4>
+        </div>
 
-            <div class="text-center my-5"> 
-                <h4 class="titleTestimonials">Testimonials</h4>
-                <h4 class="fs-3">Why do people love me?</h4>
-            </div>
+        <div class="row my-5">
 
             <div class="col card-group">
                 <div class="card mx-5 opacity-25">
