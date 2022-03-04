@@ -21,4 +21,8 @@
         color: $boulder;
     }
 
+    a:hover i{
+        color: $silver;
+    }
+
 </style>

@@ -26,11 +26,17 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+    @import "./../../assets/variables.scss";
 
     .bi-chevron-down{
         font-size: 0.6rem;
         margin-left: 0.3rem;
+    }
+
+    ul li:hover a span{
+        color: $silver;
     }
 
 </style>

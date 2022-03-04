@@ -28,22 +28,26 @@
           address: {
             mainTitle: "Address",
             menuTitle: ["382 NE 191st St # 87394 Miami, FL 33179-3899", "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)", "support@maxcoach.com"],
+            menuIcon: ["bi bi-facebook", "bi bi-twitter", "bi bi-instagram", "bi bi-linkedin"],
             menuImg: null,
           },
           explore: {
             mainTitle: "Explore",
             menuTitle: ["Start here", "Success story", "Blog", "Courses", "Contact us"],
+            menuIcon: null,
             menuImg: null,
           },
           information: {
             mainTitle: "Information",
             menuTitle: ["Membership", "Purchase guide", "Privacy policy", "Teams of services"],
+            menuIcon: null,
             menuImg: null,
           },
           instagram: {
             mainTitle: {"social":"Instagram", "linkSocial":"@maxcoach"},
             menuTitle: null,
-            menuImg: ["instagram1.jpeg", "instagram2.jpg", "instagram3.jpg"], 
+            menuIcon: null,
+            menuImg: ["instagram1", "instagram2", "instagram3"], 
           },
         }
       }
@@ -53,5 +57,5 @@
 </script>
 
 <style lang="scss">
-
+  
 </style>

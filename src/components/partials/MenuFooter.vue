@@ -17,19 +17,23 @@
             </li>
 
             <!-- quando proprietà.menuTitle == null, li non da errori e non viene eseguito -->
-            <li v-for="(linkMenu, index) in proprieta.menuTitle" :key="'linkMunuFooter' + index">
+            <li v-for="(linkMenu, index) in proprieta.menuTitle" :key="'linkMenuFooter' + index">
                 <a href="#">{{linkMenu}}</a>
             </li>
 
+            <!-- quando proprietà.menuIcon == null, li non da errori e non viene eseguito -->
+            <li v-for="(icon, index) in proprieta.menuIcon" :key="'iconMenuFooter' + index" class="d-inline">
+                <a href="#" class="me-4 fs-5">
+                    <i :class="icon"></i>
+                </a>
+            </li>
+
                 <!-- quando proprietà.menuImg == null, li non da errori e non viene eseguito -->
-            <li class="d-flex">
-                <div v-for="(img, index) in proprieta.menuImg" :key="'imgMunuFooter' + index" class="mx-2">
-                    <a href="#">
-                        <div class="imgSocial">
-                            <img class="w-100 h-100" :src="`./../assets/img/${img}`" alt="">
-                        </div>
-                    </a>
-                </div>
+            <li class="d-inline" v-for="(img, index) in proprieta.menuImg" :key="'imgMenuFooter' + index">
+                <a href="#" class="me-3">
+                    <img class="imgSocial" :src="'./../../assets/img/'+img+'.jpeg'" alt="">
+                    <!-- <img class="imgSocial" src="./../../assets/img/instagram2.jpeg" alt="">   -->
+                </a>
             </li>
 
         </ul>                                            
@@ -62,13 +66,17 @@
         }
 
         .linkSocial{
-            color: $tulipTree;
+            color: $orange;
         }
 
         .imgSocial{
             width: 7rem;
             height: 7rem;
         }
+    }
+
+    ul li:hover a{
+        color: $silver;
     }
 
     ul li:first-child{

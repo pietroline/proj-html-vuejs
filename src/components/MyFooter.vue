@@ -27,7 +27,7 @@
             </div>
         </div>
 
-       <div class="container">
+       <div class="container my-5">
             <div id="footerBottom" class="row">
                 <MenuFooter :menuFooter="menuFooter"/>
             </div>
@@ -125,13 +125,9 @@
         
     }
 
-    #footerBottom{
-        margin: 5rem 0;
-    }
-
     .copyright{
         font-size: 0.8rem;
-        color: $silver;
+        color: $dustyGray;
     }
 
 </style>
