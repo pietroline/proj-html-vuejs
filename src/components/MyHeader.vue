@@ -1,23 +1,35 @@
 <template>
-    <header class="container">
-       <div class="row my-2">
-           <div class="col-3 d-flex align-items-center justify-content-start">
-               <LogoMaxCoach/>
-               
-           </div>     
-           <div class="col-6 d-flex align-items-center justify-content-center">
-               <MenuHeader :menuHeader="menuHeader"/>
-               
+    <header>
+
+        <div id="headerTop" class="container-fluid">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <BiggestEvent/>
+                </div>
             </div>
-            <div class="col-3 d-flex align-items-center justify-content-end">
-                <IconeSocialHeader/>
-            </div>     
-       </div>
+        </div>
+
+        <div id="headerBottom" class="container">
+             <div class="row my-3">
+                <div class="col-3 d-flex align-items-center justify-content-start">
+                    <LogoMaxCoach/>
+                    
+                </div>     
+                <div class="col-6 d-flex align-items-center justify-content-center">
+                    <MenuHeader :menuHeader="menuHeader"/>
+                    
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-end">
+                        <IconeSocialHeader/>
+                    </div>     
+            </div>
+        </div>
     </header>
 </template>
 
 <script>
 
+    import BiggestEvent from "./partials/BiggestEvent.vue";
     import LogoMaxCoach from "./partials/LogoMaxCoach.vue";
     import MenuHeader from "./partials/MenuHeader.vue";
     import IconeSocialHeader from "./partials/IconeSocialHeader.vue";
@@ -25,6 +37,7 @@
     export default {
         name: "MyHeader",
         components:{
+            BiggestEvent,
             LogoMaxCoach,
             MenuHeader,
             IconeSocialHeader,
@@ -35,6 +48,12 @@
     }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    
+    @import "./../assets/variables.scss";
 
+    #headerTop{
+        background-color: $colorHeaderTop;
+        color: $dustyGray;
+    }
 </style>

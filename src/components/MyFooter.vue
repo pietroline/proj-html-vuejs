@@ -1,8 +1,8 @@
 <template>
     <footer>
 
-        <div class="container-fluid">
-            <div id="footerTop" class="row">
+        <div id="footerTop" class="container-fluid">
+            <div class="row">
                 <div class="col">
 
                     <div class="imgFooter left">
@@ -27,8 +27,8 @@
             </div>
         </div>
 
-       <div class="container my-5">
-            <div id="footerBottom" class="row">
+       <div id="footerBottom" class="container my-5">
+            <div class="row">
                 <MenuFooter :menuFooter="menuFooter"/>
             </div>
         </div>
