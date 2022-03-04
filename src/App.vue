@@ -3,6 +3,9 @@
     
     <MyHeader :menuHeader="menuHeader"/>
     <MyJumbotron/>
+    <MySection1/>
+    <MySection2/>
+    <MySection3/>
     <MyFooter :menuFooter="menuFooter" />
 
   </div>
@@ -12,6 +15,9 @@
 
   import MyHeader from "./components/MyHeader.vue";
   import MyJumbotron from "./components/MyJumbotron.vue";
+  import MySection1 from "./components/MySection1.vue";
+  import MySection2 from "./components/MySection2.vue";
+  import MySection3 from "./components/MySection3.vue";
   import MyFooter from "./components/MyFooter.vue";
 
   export default {
@@ -19,6 +25,9 @@
     components: {
       MyHeader,
       MyJumbotron,
+      MySection1,
+      MySection2,
+      MySection3,
       MyFooter,
     },
     data(){
