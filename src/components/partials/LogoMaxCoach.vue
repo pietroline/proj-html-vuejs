@@ -15,6 +15,7 @@
 <style lang="scss" scoped>
 
     .contenitore{
+        display: inline-block;
         width: 10rem;
 
         img{

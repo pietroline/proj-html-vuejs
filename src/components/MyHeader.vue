@@ -1,11 +1,17 @@
 <template>
     <header class="container">
        <div class="row my-2">
-           <div class="col d-flex align-items-center justify-content-between">
+           <div class="col-3 d-flex align-items-center justify-content-start">
                <LogoMaxCoach/>
+               
+           </div>     
+           <div class="col-6 d-flex align-items-center justify-content-center">
                <MenuHeader :menuHeader="menuHeader"/>
-               <IconeSocialHeader/>
-           </div>          
+               
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-end">
+                <IconeSocialHeader/>
+            </div>     
        </div>
     </header>
 </template>
