@@ -2,7 +2,7 @@
     <section class="container">
 
         <div class="text-center my-5"> 
-            <h4 class="upcomingEvents">Upcoming Events</h4>
+            <h4 class="ms_upcomingEvents">Upcoming Events</h4>
             <h4 class="fs-3">Let's Work Together</h4>
         </div>
 
@@ -15,9 +15,9 @@
                     </div>
                     <div class="col-md-8 d-flex align-items-center">
                         <div class="card-body">
-                            <div class="my-3 colorEvent">Nov 22, 2020</div>
+                            <div class="my-3 ms_colorEvent">Nov 22, 2020</div>
                             <div class="my-3 fw-bold">Storytelling Workshop</div>
-                            <div class="my-3 colorEvent">
+                            <div class="my-3 ms_colorEvent">
                                 <i class="bi bi-geo-alt"></i>
                                 <span class="ms-2">Texas, US</span>
                             </div>
@@ -33,9 +33,9 @@
                     </div>
                     <div class="col-md-8 d-flex align-items-center">
                         <div class="card-body">
-                            <div class="my-3 colorEvent">OCT 10, 2020</div>
+                            <div class="my-3 ms_colorEvent">OCT 10, 2020</div>
                             <div class="my-3 fw-bold">Painting Art Contest 2020</div>
-                            <div class="my-3 colorEvent">
+                            <div class="my-3 ms_colorEvent">
                                 <i class="bi bi-geo-alt"></i>
                                 <span class="ms-2">New York, US</span>
                             </div>
@@ -52,9 +52,9 @@
                 <div class="row g-0">
                     <div class="col-md-8 d-flex align-items-center">
                         <div class="card-body text-end mx-3">
-                            <div class="my-3 colorEvent">Nov 23, 2020</div>
+                            <div class="my-3 ms_colorEvent">Nov 23, 2020</div>
                             <div class="my-3 fw-bold">International Art Fair 2020</div>
-                            <div class="my-3 colorEvent">
+                            <div class="my-3 ms_colorEvent">
                                 <i class="bi bi-geo-alt"></i>
                                 <span class="ms-2">Hamburg, Germany</span>
                             </div>
@@ -70,9 +70,9 @@
                 <div class="row g-0">
                     <div class="col-md-8 d-flex align-items-center">
                         <div class="card-body text-end mx-3">
-                            <div class="my-3 colorEvent">Dec 15, 2020</div>
+                            <div class="my-3 ms_colorEvent">Dec 15, 2020</div>
                             <div class="my-3 fw-bold">Street Performace: Call for Artist</div>
-                            <div class="my-3 colorEvent">
+                            <div class="my-3 ms_colorEvent">
                                 <i class="bi bi-geo-alt"></i>
                                 <span class="ms-2">Illinois, US</span>
                             </div>
@@ -106,14 +106,14 @@
     .container{
         margin: 5rem auto;
       
-        .upcomingEvents{
+        .ms_upcomingEvents{
             font-family: "Comforter";
             color: $colorMartin;
             font-size: 3rem;
             
         }
 
-        .colorEvent{
+        .ms_colorEvent{
             color: $dustyGray;
         }
        

@@ -1,6 +1,6 @@
 <template>
 
-    <a href="#" class="contenitore">
+    <a href="#" class="ms_contenitore">
         <img src="./../../assets/img/dark-logo.png" alt="Img logo MaxCoach">
     </a>
   
@@ -14,7 +14,7 @@
 
 <style lang="scss" scoped>
 
-    .contenitore{
+    .ms_contenitore{
         display: inline-block;
         width: 10rem;
 

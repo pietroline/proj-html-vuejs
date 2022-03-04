@@ -1,7 +1,7 @@
 <template>
     <header>
 
-        <div id="headerTop" class="container-fluid">
+        <div id="ms_headerTop" class="container-fluid">
             <div class="row">
                 <div class="col d-flex align-items-center justify-content-center">
                     <BiggestEvent/>
@@ -52,7 +52,7 @@
     
     @import "./../assets/variables.scss";
 
-    #headerTop{
+    #ms_headerTop{
         background-color: $colorHeaderTop;
         color: $dustyGray;
     }

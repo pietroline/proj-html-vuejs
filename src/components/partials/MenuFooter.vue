@@ -13,7 +13,7 @@
             <li v-if="proprieta.mainTitle.length > 0">{{proprieta.mainTitle}}</li>
             <li v-if="proprieta.mainTitle.length == undefined">
                 <span>{{proprieta.mainTitle.social}}</span>
-                <span class="ms-1 linkSocial">{{proprieta.mainTitle.linkSocial}}</span>
+                <span class="ms-1 ms_linkSocial">{{proprieta.mainTitle.linkSocial}}</span>
             </li>
 
             <!-- quando proprietà.menuTitle == null, li non da errori e non viene eseguito -->
@@ -31,8 +31,7 @@
                 <!-- quando proprietà.menuImg == null, li non da errori e non viene eseguito -->
             <li class="d-inline" v-for="(img, index) in proprieta.menuImg" :key="'imgMenuFooter' + index">
                 <a href="#" class="me-3">
-                    <img class="imgSocial" :src="'./../../assets/img/'+img+'.jpeg'" alt="">
-                    <!-- <img class="imgSocial" src="./../../assets/img/instagram2.jpeg" alt="">   -->
+                    <img class="ms_imgSocial" :src="require('./../../assets/img/'+img+'.jpeg')" alt="">
                 </a>
             </li>
 
@@ -47,7 +46,7 @@
         name: "MenuFooter",
         props:{
             "menuFooter": Object,
-        }
+        },
     }
 </script>
 
@@ -65,13 +64,14 @@
             text-decoration: none;
         }
 
-        .linkSocial{
+        .ms_linkSocial{
             color: $orange;
         }
 
-        .imgSocial{
+        .ms_imgSocial{
             width: 7rem;
             height: 7rem;
+            object-fit: cover;
         }
     }
 

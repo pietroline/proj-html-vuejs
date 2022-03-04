@@ -1,25 +1,25 @@
 <template>
     <footer>
 
-        <div id="footerTop" class="container-fluid">
+        <div id="ms_footerTop" class="container-fluid">
             <div class="row">
                 <div class="col">
 
-                    <div class="imgFooter left">
+                    <div class="ms_imgFooter left">
                         <img src="./../assets/img/artist-shape-color-paint-top-left-300x170.png" alt="">
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center h-100">
-                        <span class="textFooter">Newsletter to get in touch</span>
-                        <div class="contenitoreEmail">
+                        <span class="ms_textFooter">Newsletter to get in touch</span>
+                        <div class="ms_contenitoreEmail">
                             <form>
-                                <input class="email" type="email" placeholder="Your e-mail">
+                                <input class="ms_email" type="email" placeholder="Your e-mail">
                             </form>
-                            <button class="btnSendEmail" @click.prevent="inviaEmail()"><i class="bi bi-arrow-right"></i></button>
+                            <button class="ms_btnSendEmail" @click.prevent="inviaEmail()"><i class="bi bi-arrow-right"></i></button>
                         </div>
                     </div>
 
-                    <div class="imgFooter right">
+                    <div class="ms_imgFooter right">
                         <img src="./../assets/img/artist-shape-color-paint-bottom-right-300x153.png" alt="">
                     </div>
 
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="container d-flex justify-content-center copyright">&copy; 2020 Maxcoach. All Rights Reserved</div>
+        <div class="container d-flex justify-content-center ms_copyright">&copy; 2020 Maxcoach. All Rights Reserved</div>
 
     </footer>
 </template>
@@ -65,12 +65,12 @@
 
     @import "./../assets/variables.scss";
 
-    #footerTop{
+    #ms_footerTop{
         background-color: $bayOfMany;
         overflow: hidden;
         position: relative;
 
-        .imgFooter{
+        .ms_imgFooter{
             position: absolute;
             bottom: 0;
             
@@ -83,8 +83,8 @@
             }
         }
 
-        .textFooter{
-            color: #fff;
+        .ms_textFooter{
+            color: $white;
             font-size: 2rem;
             text-align: end;
 
@@ -92,14 +92,14 @@
             margin: 2rem 8rem;
         }
 
-        .contenitoreEmail{
+        .ms_contenitoreEmail{
             position: relative;
 
-            input.email{
+            input.ms_email{
                 width: 35rem;
 
                 background-color: $bayOfMany;
-                color: #fff;
+                color: $white;
 
                 font-size: 1.5rem;
 
@@ -110,12 +110,12 @@
                 
             }
 
-            .btnSendEmail{
+            .ms_btnSendEmail{
                 background-color: $bayOfMany;
                 border: none;
 
                 font-size: 1.5rem;
-                color: #fff;
+                color: $white;
 
                 position: absolute;
                 top: 0;
@@ -125,7 +125,7 @@
         
     }
 
-    .copyright{
+    .ms_copyright{
         font-size: 0.8rem;
         color: $dustyGray;
     }

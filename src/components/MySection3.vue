@@ -11,7 +11,7 @@
         </div>
 
         <div class="text-center my-5"> 
-            <h4 class="titleTestimonials">Testimonials</h4>
+            <h4 class="ms_titleTestimonials">Testimonials</h4>
             <h4 class="fs-3">Why do people love me?</h4>
         </div>
 
@@ -24,7 +24,7 @@
                         <p class="card-text">I'm a very strict person so I require everithing to be organized and neat. Then, I'll be abble to make thimks right and shine. MaxCoach guys got me.</p>
                         <a href="#" class="d-flex align-items-center">
                             <img class="rounded-circle" src="./../assets/img/artist-testimonial-avatar-01.jpg" alt="img artist-testimonial-avatar-01">
-                            <div class="ms-4 author">
+                            <div class="ms-4 ms_author">
                                 <div>Florence Themes</div>
                                 <div class="mt-3">/Multimedia Admin</div>
                             </div>
@@ -38,7 +38,7 @@
                         <p class="card-text">I am free to lear at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me</p>
                         <a href="#" class="d-flex align-items-center">
                             <img class="rounded-circle" src="./../assets/img/artist-testimonial-avatar-02.jpg" alt="img artist-testimonial-avatar-02">
-                            <div class="ms-4 author">
+                            <div class="ms-4 ms_author">
                                 <div>Mina Hollance</div>
                                 <div class="mt-3">/ Freelancer</div>
                             </div>
@@ -52,7 +52,7 @@
                         <p class="card-text">I need to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
                         <a href="#" class="d-flex align-items-center">
                             <img class="rounded-circle" src="./../assets/img/artist-testimonial-avatar-03.jpg" alt="img artist-testimonial-avatar-03">
-                            <div class="ms-4 author">
+                            <div class="ms-4 ms_author">
                                 <div>Madley Pondor</div>
                                 <div class="mt-3">/IT Specialist</div>
                             </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="text-center my-5 pointer"> 
+            <div class="text-center my-5 ms_pointer"> 
                <i class="bi bi-dot fs-1"></i>
                <i class="bi bi-dot fs-1"></i>
                <i class="bi bi-dot fs-1"></i>
@@ -98,7 +98,7 @@
             a{
                 text-decoration: none;
                 
-                .author{
+                .ms_author{
                     color: #000;
 
                     & div:first-child{
@@ -114,14 +114,14 @@
  
         }
 
-        .titleTestimonials{
+        .ms_titleTestimonials{
             font-family: "Comforter";
             color: $colorMartin;
             font-size: 3rem;
             
         }
 
-        .pointer{
+        .ms_pointer{
             color: $silver;
             & i:first-child{
                 color: #000;
