@@ -7,6 +7,7 @@
     <MySection2/>
     <MySection3/>
     <MySection4/>
+    <MySection5/>
     <MySection6/>
     <MyFooter :menuFooter="menuFooter" />
 
@@ -21,6 +22,7 @@
   import MySection2 from "./components/MySection2.vue";
   import MySection3 from "./components/MySection3.vue";
   import MySection4 from "./components/MySection4.vue";
+  import MySection5 from "./components/MySection5.vue";
   import MySection6 from "./components/MySection6.vue";
   import MyFooter from "./components/MyFooter.vue";
 
@@ -33,6 +35,7 @@
       MySection2,
       MySection3,
       MySection4,
+      MySection5,
       MySection6,
       MyFooter,
     },
