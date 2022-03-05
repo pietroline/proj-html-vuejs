@@ -1,9 +1,9 @@
 <template>
   <div>
-      <a href="#"><i class="bi bi-twitter mx-2"></i></a>
-      <a href="#"><i class="bi bi-facebook mx-2"></i></a>
-      <a href="#"><i class="bi bi-instagram mx-2"></i></a>
-      <a href="#"><i class="bi bi-linkedin mx-2"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
   </div>
 </template>
 
@@ -17,12 +17,14 @@
 
     @import "./../../assets/variables.scss";
     
-    .bi{
+    a {
         color: $boulder;
-    }
+        margin: 0 0.8rem;
+    } 
 
-    a:hover i{
+    a:hover{
         color: $silver;
+        
     }
 
 </style>

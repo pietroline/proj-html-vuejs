@@ -46,7 +46,7 @@
           address: {
             mainTitle: "Address",
             menuTitle: ["382 NE 191st St # 87394 Miami, FL 33179-3899", "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)", "support@maxcoach.com"],
-            menuIcon: ["bi bi-facebook", "bi bi-twitter", "bi bi-instagram", "bi bi-linkedin"],
+            menuIcon: ["fa-brands fa-facebook-square", "bi bi-twitter", "bi bi-instagram", "bi bi-linkedin"],
             menuImg: null,
           },
           explore: {
