@@ -1,11 +1,9 @@
 <template>
-    <header>
+    <header class="container-fluid">
 
-        <div id="ms_headerTop" class="container-fluid">
-            <div class="row">
-                <div class="col d-flex align-items-center justify-content-center">
-                    <BiggestEvent/>
-                </div>
+        <div id="ms_headerTop" class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+                <BiggestEvent/>
             </div>
         </div>
 
@@ -51,6 +49,13 @@
 <style lang="scss" scoped>
     
     @import "./../assets/variables.scss";
+
+    header{
+        background-color: $white;
+        position: fixed;
+        z-index: 999;
+
+    }
 
     #ms_headerTop{
         background-color: $colorHeaderTop;
