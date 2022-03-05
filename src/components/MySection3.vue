@@ -5,6 +5,7 @@
             <div class="ms_shape4"/>
             <div class="ms_shape5"/>
             <div class="ms_ring"/>
+            <div class="ms_wave"/>
         </div>
 
         <div class="container-fluid">
@@ -18,12 +19,12 @@
                 </div>
             </div>
 
-            <div class="text-center my-5"> 
+            <div class="text-center py-5 ms_sectionBackgroundColor"> 
                 <h4 class="ms_titleTestimonials">Testimonials</h4>
                 <h4 class="fs-3">Why do people love me?</h4>
             </div>
 
-            <div class="row my-5">
+            <div class="row py-5 ms_sectionBackgroundColor">
 
                 <div class="col card-group">
                     <div class="card mx-5 opacity-25">
@@ -135,6 +136,8 @@
             top: 29rem;
             left: 87rem;
 
+            z-index: 9;
+
         }
 
         & .ms_ring{
@@ -152,12 +155,29 @@
             z-index: 9;
 
         }
-        
-        
+
+        & .ms_wave{
+            background-image: url("./../assets/img/wave.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            height: 30rem;
+            width: 100vw;
+
+            position: absolute;
+            bottom: 40rem;
+            
+
+        }
+          
     }
 
     .container-fluid{
         margin: 5rem auto;
+
+        .ms_sectionBackgroundColor{
+            background-color: #faf8f6;
+        }
 
         .card{
             
