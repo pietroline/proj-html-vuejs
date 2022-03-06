@@ -29,11 +29,23 @@
 
        <div id="footerBottom" class="container my-5">
             <div class="row">
-                <MenuFooter :menuFooter="menuFooter"/>
+                <!-- <MenuFooter :menuFooter="menuFooter"/> -->
+                <div class="col-4">
+                    <MenuFooter :menu="menuFooter.address"/>
+                </div>
+                <div class="col-2">
+                    <MenuFooter :menu="menuFooter.explore"/>
+                </div>
+                <div class="col-2">
+                    <MenuFooter :menu="menuFooter.information"/>
+                </div>
+                <div class="col-4">
+                    <MenuFooter :menu="menuFooter.instagram"/>
+                </div>
             </div>
         </div>
 
-        <div class="container d-flex justify-content-center ms_copyright">&copy; 2020 Maxcoach. All Rights Reserved</div>
+        <div class="d-flex justify-content-center ms_copyright">&copy; 2020 Maxcoach. All Rights Reserved</div>
 
     </footer>
 </template>
