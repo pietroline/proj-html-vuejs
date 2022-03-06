@@ -4,7 +4,7 @@
         <span>Start TOMORROW! Our biggerest event of the year...</span>
         <span class="mx-4 text-dark d-flex align-items-center">
             <i class="bi bi-clock me-3 fs-4"></i>
-            <Countdown class="countdown" :deadline="deadline()"></Countdown>
+            <Countdown :deadline="deadline()"></Countdown>
         </span>
         <MyBtn :type="'dark'" :text="'Get ticket'"/>
   </section>
@@ -14,7 +14,7 @@
 
     //importo dayjs e aggiungo estenzione customPardeFormat
     const dayjs = require('dayjs')
-    var customParseFormat = require('dayjs/plugin/customParseFormat')
+    let customParseFormat = require('dayjs/plugin/customParseFormat')
     dayjs.extend(customParseFormat)
 
     //importo componente Countdown
