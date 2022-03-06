@@ -25,49 +25,22 @@
             </div>
 
             <div class="row py-5 ms_sectionBackgroundColor">
-
                 <div class="col card-group">
-                    <div class="card mx-5 opacity-25">
+
+                    <div class="card mx-5" v-for="(testimonial, index) in data.testimonials" :key="'Testimonial ' + index">
                         <div class="card-body">
-                            <h5 class="card-title">It's a choice of quality fot people with special needs</h5>
-                            <p class="card-text">I'm a very strict person so I require everithing to be organized and neat. Then, I'll be abble to make thimks right and shine. MaxCoach guys got me.</p>
+                            <h5 class="card-title">{{testimonial.title}}</h5>
+                            <p class="card-text">{{testimonial.paragraph}}</p>
                             <a href="#" class="d-flex align-items-center">
-                                <img class="rounded-circle" src="./../assets/img/artist-testimonial-avatar-01.jpg" alt="img artist-testimonial-avatar-01">
+                                <img class="rounded-circle" :src="require(`./../assets/img/${testimonial.user.image}.jpg`)" :alt="`img ${testimonial.user.image}`">
                                 <div class="ms-4 ms_author">
-                                    <div>Florence Themes</div>
-                                    <div class="mt-3">/Multimedia Admin</div>
+                                    <div>{{testimonial.user.name}}</div>
+                                    <div class="mt-3">{{testimonial.user.work}}</div>
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="card mx-5">
-                        <div class="card-body">
-                            <h5 class="card-title">High level of efficiency and scientific teaching methods</h5>
-                            <p class="card-text">I am free to lear at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me</p>
-                            <a href="#" class="d-flex align-items-center">
-                                <img class="rounded-circle" src="./../assets/img/artist-testimonial-avatar-02.jpg" alt="img artist-testimonial-avatar-02">
-                                <div class="ms-4 ms_author">
-                                    <div>Mina Hollance</div>
-                                    <div class="mt-3">/ Freelancer</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card mx-5 opacity-25">
-                        <div class="card-body">
-                            <h5 class="card-title">Professional team of specialists and passionate mentors at teach</h5>
-                            <p class="card-text">I need to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
-                            <a href="#" class="d-flex align-items-center">
-                                <img class="rounded-circle" src="./../assets/img/artist-testimonial-avatar-03.jpg" alt="img artist-testimonial-avatar-03">
-                                <div class="ms-4 ms_author">
-                                    <div>Madley Pondor</div>
-                                    <div class="mt-3">/IT Specialist</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="text-center my-5 ms_pointer"> 
@@ -86,6 +59,9 @@
 <script>
     export default {
         name: "MySection3",
+        props:{
+            "data": Object,
+        }
     }
 </script>
 

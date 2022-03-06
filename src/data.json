@@ -37,6 +37,37 @@
             }
         }
     },
+    "sectionTestimonials":{
+        "testimonials":{
+            "testimonial1":{
+                "title":"It's a choice of quality fot people with special needs",
+                "paragraph":"I'm a very strict person so I require everithing to be organized and neat. Then, I'll be abble to make thimks right and shine. MaxCoach guys got me.",
+                "user":{
+                    "image": "artist-testimonial-avatar-01",
+                    "name": "Florence Themes",
+                    "work": "/Multimedia Admin"
+                }
+            },
+            "testimonial2":{
+                "title":"High level of efficiency and scientific teaching methods",
+                "paragraph":"I am free to lear at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me",
+                "user":{
+                    "image": "artist-testimonial-avatar-02",
+                    "name": "Mina Hollance",
+                    "work": "/ Freelancer"
+                }
+            },
+            "testimonial3":{
+                "title":"Professional team of specialists and passionate mentors at teach",
+                "paragraph":"I need to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+                "user":{
+                    "image": "artist-testimonial-avatar-03",
+                    "name": "Madley Pondor",
+                    "work": "/IT Specialist"
+                }
+            }
+        }
+    },
     "menuFooter": {
         "address": {
           "mainTitle": "Address",

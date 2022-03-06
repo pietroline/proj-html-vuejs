@@ -5,7 +5,7 @@
     <MyJumbotron/>
     <MySection1 :data="jsonData.sectionArtigtCoaching"/>
     <MySection2/>
-    <MySection3/>
+    <MySection3 :data="jsonData.sectionTestimonials"/>
     <MySection4/>
     <MySection5/>
     <MySection6/>
