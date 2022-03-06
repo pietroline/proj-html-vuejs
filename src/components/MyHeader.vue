@@ -2,26 +2,29 @@
     <header class="container-fluid">
 
         <div id="ms_headerTop" class="row">
-            <div class="col d-flex align-items-center justify-content-center">
+            <div class="col">
                 <BiggestEvent/>
             </div>
         </div>
 
         <div id="headerBottom" class="container">
              <div class="row my-3">
+
                 <div class="col-3 d-flex align-items-center justify-content-start">
                     <LogoMaxCoach/>
-                    
-                </div>     
+                </div>   
+                 
                 <div class="col-6 d-flex align-items-center justify-content-center">
                     <MenuHeader :menuHeader="menuHeader"/>
-                    
-                    </div>
-                    <div class="col-3 d-flex align-items-center justify-content-end">
-                        <IconeSocialHeader/>
-                    </div>     
+                </div>
+
+                <div class="col-3 d-flex align-items-center justify-content-end">
+                    <IconeSocialHeader/>
+                </div> 
+                   
             </div>
         </div>
+        
     </header>
 </template>
 
