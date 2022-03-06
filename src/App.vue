@@ -3,7 +3,7 @@
     
     <MyHeader :menuHeader="jsonData.menuHeader.menu" :icons="jsonData.menuHeader.icons"/>
     <MyJumbotron/>
-    <MySection1/>
+    <MySection1 :data="jsonData.sectionArtigtCoaching"/>
     <MySection2/>
     <MySection3/>
     <MySection4/>
