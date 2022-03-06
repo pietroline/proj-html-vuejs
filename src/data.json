@@ -1,5 +1,8 @@
 {
-    "menuHeader": ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+    "menuHeader": {
+        "menu": ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+        "icons": ["bi bi-twitter", "fa-brands fa-facebook-f", "bi bi-instagram", "bi bi-linkedin"]
+    },
     "menuFooter": {
         "address": {
           "mainTitle": "Address",

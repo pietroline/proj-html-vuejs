@@ -1,15 +1,23 @@
 <template>
   <div>
-      <a href="#"><i class="bi bi-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
-      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#" 
+        v-for="(icon, index) in icons" 
+        :key="'icons header' + index">
+
+        <!-- inizio contenuto a -->
+        <i :class="icon"></i>
+        <!-- fine contenuto a -->
+        </a>
+      
   </div>
 </template>
 
 <script>
     export default {
         name: "IconeSocialHeader",
+        props:{
+            "icons": Array,
+        }
     }
 </script>
 

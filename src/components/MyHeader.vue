@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="col-3 d-flex align-items-center justify-content-end">
-                    <IconeSocialHeader/>
+                    <IconeSocialHeader :icons="icons"/>
                 </div> 
                    
             </div>
@@ -45,6 +45,7 @@
         },
         props:{
             "menuHeader": Array,
+            "icons": Array,
         }
     }
 </script>

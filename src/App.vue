@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <MyHeader :menuHeader="jsonData.menuHeader"/>
+    <MyHeader :menuHeader="jsonData.menuHeader.menu" :icons="jsonData.menuHeader.icons"/>
     <MyJumbotron/>
     <MySection1/>
     <MySection2/>
