@@ -5,7 +5,7 @@
                 <div class="text-center w-75">
                     <h4 class="ms_textStyle">Hello, I'am Martin</h4> 
                     <h4>Artist Coaching and Mentoring Might Be for you.</h4>
-                    <MyBtn class="mt-4" :text="'Get started today'"/>
+                    <MyBtn :type="'dark'" class="mt-4" :text="'Get started today'"/>
                 </div>
                 
             </div>

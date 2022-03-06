@@ -15,7 +15,7 @@
             <div class="col ms_textStyle">
                 <p class="fs-5">As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaaningful and authentic artist you truly want to be. I support artists in crafting and living a creative life as well as feeling good about themselves and their art.</p>
                 <p class="my-5 fs-5">As an artist and an educator for nearly 30 years, I understand  what it takes to create.</p>
-                <button class="btn px-4 py-2">Get started today</button>
+                <MyBtn :type="'light'" :text="'Get started today'"/>
             </div>
         </div>
         
@@ -26,8 +26,14 @@
 </template>
 
 <script>
+
+    import MyBtn from "./partials/MyBtn.vue";
+
     export default {
         name: "MySection2",
+        components:{
+            MyBtn,
+        }
     }
 </script>
 

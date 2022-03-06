@@ -70,6 +70,69 @@
             }
         }
     },
+    "sectionArtistCoaching":{
+        "title": "Artist Coaching",
+        "subTitles": ["Latest Online Courses"],
+        "courses":{
+            "course1":{
+                "image": "artist-course-01-480x480",
+                "price": "18.00",
+                "title": "The Acrylic Painting Academy",
+                "numberLessons": 4,
+                "maxStudents": 50
+            },
+            "course2":{
+                "image": "artist-course-02-480x480",
+                "price": "21.00",
+                "title": "Drawing and Shading: Complete Course",
+                "numberLessons": 14,
+                "maxStudents": 50
+            },
+            "course3":{
+                "image": "artist-course-03-480x480",
+                "price": "19.00",
+                "title": "The color Theory for Digital Artist",
+                "numberLessons": 7,
+                "maxStudents": 50
+            },
+            "course4":{
+                "image": "artist-course-04-480x480",
+                "price": "35.00",
+                "title": "Ultimate Guide to Digital Sketching for Beginner",
+                "numberLessons": 14,
+                "maxStudents": 50
+            },
+            "course5":{
+                "image": "artist-course-05-480x480",
+                "price": "19.00",
+                "title": "Portrait Drawing The Smart Way",
+                "numberLessons": 2,
+                "maxStudents": 50
+            },
+            "course6":{
+                "image": "artist-course-06-480x480",
+                "price": "19.00",
+                "title": "Mastering Watercolor Painting from Beginner",
+                "numberLessons": 9,
+                "maxStudents": 50
+            },
+            "course7":{
+                "image": "artist-course-07-480x480",
+                "price": "25.00",
+                "title": "The Art & Science of Drawing",
+                "numberLessons": 4,
+                "maxStudents": 50
+            },
+            "course8":{
+                "image": "artist-course-08-480x480",
+                "price": "22.00",
+                "title": "The Colored Pencil Drawing Course",
+                "numberLessons": 6,
+                "maxStudents": 50
+            }
+        }
+        
+    },
     "menuFooter": {
         "address": {
           "mainTitle": "Address",

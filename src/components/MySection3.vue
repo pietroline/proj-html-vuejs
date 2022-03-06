@@ -1,14 +1,17 @@
 <template>
     <section>
-        <div>
-            <div class="ms_shape3"/>
-            <div class="ms_shape4"/>
-            <div class="ms_shape5"/>
-            <div class="ms_ring"/>
-            <div class="ms_wave"/>
-        </div>
-
         <div class="container-fluid">
+            
+            <!-- inizio background-image -->
+            <div class="row">
+                <div class="ms_shape3"/>
+                <div class="ms_shape4"/>
+                <div class="ms_shape5"/>
+                <div class="ms_ring"/>
+                <div class="ms_wave"/>
+            </div>
+
+            <!-- fine background-image -->
 
             <div class="row row-cols-1">
                 <div class="col text-center position-relative">
@@ -23,7 +26,7 @@
                 <h4 class="ms_titleTestimonials">{{data.title}}</h4>
                 <h4 class="fs-3"
                     v-for="(subTitle, index) in data.subTitles" 
-                    :key="'subtitle '+index">
+                    :key="'subtitle testimonials '+index">
 
                 <!-- inizio contenuto h4 -->
                 {{subTitle}}

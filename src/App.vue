@@ -6,7 +6,7 @@
     <MySection1 :data="jsonData.sectionArtigtCoaching"/>
     <MySection2/>
     <MySection3 :data="jsonData.sectionTestimonials"/>
-    <MySection4/>
+    <MySection4 :data="jsonData.sectionArtistCoaching"/>
     <MySection5/>
     <MySection6/>
     <MyFooter :menuFooter="jsonData.menuFooter" />

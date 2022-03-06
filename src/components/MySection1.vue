@@ -62,7 +62,7 @@
             background-size: contain;
             background-repeat: no-repeat;
 
-            height: 100vw;
+            height: 30rem;
             width: 100vw;
 
             position: absolute;
@@ -80,7 +80,7 @@
 
             position: absolute;
             top: 8rem;
-            right: -4rem;
+            right: 0;
         }
 
         & .ms_shape1{

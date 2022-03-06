@@ -6,7 +6,7 @@
             <i class="bi bi-clock me-3 fs-4"></i>
             <Countdown class="countdown" :deadline="deadline()"></Countdown>
         </span>
-        <MyBtn :text="'Get ticket'"/>
+        <MyBtn :type="'dark'" :text="'Get ticket'"/>
   </section>
 </template>
 
