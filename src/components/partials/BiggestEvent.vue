@@ -47,19 +47,6 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
-    @import "./../../assets/variables.scss";
-
-    .btn{
-        background-color: $orange;
-        color: $white;
-        font-weight: bold;
-
-        &:hover{
-            background-color: $iceCold;
-        }
-    }
-
-    
+<style >
+  
 </style>

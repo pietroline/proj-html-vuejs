@@ -5,7 +5,7 @@
                 <div class="text-center w-75">
                     <h4 class="ms_textStyle">Hello, I'am Martin</h4> 
                     <h4>Artist Coaching and Mentoring Might Be for you.</h4>
-                    <button class="btn mt-4 px-4 py-2">Get started today</button>
+                    <MyBtn class="mt-4" :text="'Get started today'"/>
                 </div>
                 
             </div>
@@ -14,8 +14,14 @@
 </template>
 
 <script>
+
+    import MyBtn from "./partials/MyBtn.vue"
+
     export default {
         name: "MyJumbotron",
+        components:{
+            MyBtn,
+        }
     }
 </script>
 
@@ -33,17 +39,6 @@
             color: $colorMartin;
             font-size: 3rem;
         }
-
-        .btn{
-            background-color: $orange;
-            color: $white;
-            font-weight: bold;
-
-            &:hover{
-                background-color: $iceCold;
-            }
-        }
-
 
     }
 </style>
