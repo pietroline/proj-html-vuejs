@@ -20,8 +20,15 @@
             </div>
 
             <div class="text-center py-5 ms_sectionBackgroundColor"> 
-                <h4 class="ms_titleTestimonials">Testimonials</h4>
-                <h4 class="fs-3">Why do people love me?</h4>
+                <h4 class="ms_titleTestimonials">{{data.title}}</h4>
+                <h4 class="fs-3"
+                    v-for="(subTitle, index) in data.subTitles" 
+                    :key="'subtitle '+index">
+
+                <!-- inizio contenuto h4 -->
+                {{subTitle}}
+                <!-- fine contenuto h4 -->
+                </h4>
             </div>
 
             <div class="row py-5 ms_sectionBackgroundColor">

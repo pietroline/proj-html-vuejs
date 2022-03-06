@@ -38,6 +38,8 @@
         }
     },
     "sectionTestimonials":{
+        "title":"Testimonials",
+        "subTitles":["Why do people love me?"],
         "testimonials":{
             "testimonial1":{
                 "title":"It's a choice of quality fot people with special needs",
