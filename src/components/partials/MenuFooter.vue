@@ -8,7 +8,7 @@
         <li v-if="menu.mainTitle.length > 0">{{menu.mainTitle}}</li>
         <li v-if="menu.mainTitle.length == undefined">
             <span>{{menu.mainTitle.social}}</span>
-            <span class="ms-1 ms_linkSocial">{{menu.mainTitle.linkSocial}}</span>
+            <a href="#" class="ms-1 ms_linkSocial">{{menu.mainTitle.linkSocial}}</a>
         </li>
 
         <!-- quando proprietà.menuTitle == null, li non da errori e non viene eseguito -->
@@ -53,22 +53,30 @@
         font-size: 0.8rem;
 
         a{
-           text-decoration: none;
-           color: $boulder;
+            text-decoration: none;
+            color: $boulder;
+
+            &:hover{
+                color: $silver;
+            }
         }
 
         .ms_linkSocial{
-            color: $orange;
+            color: $orange; 
+            
+            &:hover{
+                color: $crimson;
+            }
         }
 
         .ms_imgSocial{
             width: 7rem;
             height: 7rem;
             object-fit: cover;
-        }
 
-        &:hover a{
-            color: $silver;
+            &:hover{
+                opacity: 80%;
+            }
         }
 
         &:first-child{

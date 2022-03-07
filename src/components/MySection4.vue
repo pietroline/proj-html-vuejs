@@ -21,7 +21,7 @@
                     <img :src="require(`./../assets/img/${course.image}.jpg`)" class="card-img-top mt-5" :alt="`img ${course.image}`">
                     <div class="card-body">
                         <h5 class="my-2 ms_price">${{course.price}}</h5>
-                        <h5 class="my-4">{{course.title}}</h5>
+                        <h5 class="my-4 title">{{course.title}}</h5>
                         <a href="#" class="card-link">
                             <i class="bi bi-file-earmark-text me-2"></i>
                             <span>{{course.numberLessons}} Lessons</span>
@@ -76,6 +76,27 @@
         }
 
         .card{
+            position: relative;
+            height: 35rem;
+
+            .card-body{
+                border: 3px solid transparent;
+
+                .title{
+                    font-size: 1.3rem;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    
+                    border-color: $orange;
+                    background-color: $white;
+
+                    position: absolute;
+                    bottom: 5rem;
+                    width: 90%;
+                }
+            }
             
             .ms_price{
                 color: $orange;

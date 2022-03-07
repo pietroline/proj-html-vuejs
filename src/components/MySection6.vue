@@ -11,7 +11,7 @@
         <div class="row row-cols-2 mb-5">
 
             <div class="col" v-for="(event, index) in data.events" :key="'event '+index">
-                <div class="card mb-3 border-0">
+                <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4" :class="estraiIndice(index)>2?'order-1':''">
                             <img :src="require(`./../assets/img/${event.image}.jpg`)" class="img-fluid rounded-start" :alt="`img ${event.image}`">
@@ -67,10 +67,19 @@
             
         }
 
-        .ms_colorEvent{
-            color: $dustyGray;
+        .card{
+            border-color: transparent;
+            padding: 0.8rem;
+            &:hover{
+                cursor: pointer; 
+                border-color: $silver; 
+            }
+
+            .ms_colorEvent{
+                color: $dustyGray;
+            }
         }
-       
+    
     }
     
 </style>

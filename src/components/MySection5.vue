@@ -83,7 +83,7 @@
                 <div class="col">
                     <div class="text-center mt-5">
                         <span class="ms_info">Get into details now?</span>
-                        <a href="#" class="ms_info orange">View all posts <i class="bi bi-arrow-right"></i></a>
+                        <a href="#" class="ms_info color">View all posts <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -123,8 +123,12 @@
             text-decoration: none;
         }
 
-        .ms_info.orange{
+        .ms_info.color{
             color:$orange;
+
+            &:hover{
+                color: $crimson;
+            }
         }
       
         .card{
