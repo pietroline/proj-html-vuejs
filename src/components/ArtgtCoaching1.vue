@@ -11,9 +11,9 @@
             
             <div class="row">
                 <div class="col text-center">
-                    <h4 class="ms_textStyle">{{data.title}}</h4>
+                    <h4 class="ms_textStyle">{{title}}</h4>
                     <h4 class="fs-2" 
-                        v-for="(subTitle, index) in data.subTitles" 
+                        v-for="(subTitle, index) in subTitles" 
                         :key="'subtitle '+index">
 
                     <!-- inizio contenuto h4 -->
@@ -26,15 +26,13 @@
             </div>
             
             <div class="row">
-
-                <div class="col" v-for="(content, index) in data.contents" :key="'Artigt coaching '+index">
+                <div class="col" v-for="(content, index) in data" :key="'Artigt coaching '+index">
                     <div class="ms_contenitoreImg my-3">
                         <img :src="require(`./../assets/img/${content.image}.png`)" :alt="content.image">
                     </div>
                     <h5 class="fs-5">{{content.texts.title}}</h5>
                     <p class="ms_text">{{content.texts.paragraph}}</p>
                 </div>
-               
             </div>
 
         </div>
@@ -45,6 +43,8 @@
     export default {
         name: "MySection1",
         props:{
+            "title": String,
+            "subTitles": Array,
             "data": Object,
         }
     }

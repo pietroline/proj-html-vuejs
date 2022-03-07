@@ -7,33 +7,47 @@
         "title": "Artigt coaching",
         "subTitles": ["I understand what it takes to create.", "I can help you whith"],
         "contents": {
-            "content1":{
-                "image": "artist-box-image-01",
-                "texts":{
-                    "title": "Online Coures",
-                    "paragraph": "Online art coaching now offers you a very powerful way to redesign your artist mind."
+            "helpYou":{
+                "content1":{
+                    "image": "artist-box-image-01",
+                    "texts":{
+                        "title": "Online Coures",
+                        "paragraph": "Online art coaching now offers you a very powerful way to redesign your artist mind."
+                    }
+                },
+                "content2":{
+                    "image": "artist-box-image-02",
+                    "texts":{
+                        "title": "One to One",
+                        "paragraph": "Getting the necessary clarity about the current state to help you improve your ability."
+                    }
+                },
+                "content3":{
+                    "image": "artist-box-image-03",
+                    "texts":{
+                        "title": "Anywhere",
+                        "paragraph": "Access to valuable and portable program which allow you to setup and live anywhere you want."
+                    }
+                },
+                "content4":{
+                    "image": "artist-box-image-04",
+                    "texts":{
+                        "title": "On Time",
+                        "paragraph": "Punctually is our top priority bacause it's an essential criteria to assess a program quality."
+                    }
                 }
             },
-            "content2":{
-                "image": "artist-box-image-02",
-                "texts":{
-                    "title": "One to One",
-                    "paragraph": "Getting the necessary clarity about the current state to help you improve your ability."
-                }
+
+            "goal":{
+                "quote":{
+                    "author": "Martin Garrix",
+                    "sentence": "I coach and mentor visual artists, like you, to Create Like You Mean It"
+                },
+                "paragraph":"As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaaningful and authentic artist you truly want to be. I support artists in crafting and living a creative life as well as feeling good about themselves and their art.",
+                "Iam": "As an artist and an educator for nearly 30 years, I understand what it takes to create."
             },
-            "content3":{
-                "image": "artist-box-image-03",
-                "texts":{
-                    "title": "Anywhere",
-                    "paragraph": "Access to valuable and portable program which allow you to setup and live anywhere you want."
-                }
-            },
-            "content4":{
-                "image": "artist-box-image-04",
-                "texts":{
-                    "title": "On Time",
-                    "paragraph": "Punctually is our top priority bacause it's an essential criteria to assess a program quality."
-                }
+            "video":{
+                "cover": "artist-video-poster"
             }
         }
     },
@@ -133,6 +147,33 @@
             }
         }
         
+    },
+    "articleAndTips":{
+        "title": "Article and tips",
+        "subTitles": ["Latest From The Blog"],
+        "contents":{
+            "mainEvent":{
+                "type": "ARTIST",
+                "title": "Connection Between Self-Portrains and Identity",
+                "views": "May 15, 2020",
+                "date": 397,
+                "image": "artist-blog-02-500x680"
+            },
+            "event1":{
+                "type": "ARTIST",
+                "title": "Brush Strokes Energize Trees in Paintings",
+                "views": "May 15, 2020",
+                "date": 688,
+                "image": "artist-blog-01-480x356"
+            },
+            "event2":{
+                "type": "ARTIST",
+                "title": "Pocket-Sized Notebooks Hold Miniature Paintings",
+                "views": "May 15, 2020",
+                "date": 603,
+                "image": "artist-blog-03-480x356"
+            }
+        }
     },
     "sectionUpcomingEvents":{
         "title": "Upcoming Events",

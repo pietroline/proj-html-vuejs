@@ -4,8 +4,16 @@
 
             <div class="row text-center my-5"> 
                 <div class="col">
-                    <h4 class="ms_articleAndTips">Article and tips</h4>
-                    <h4 class="fs-3">Latest From The Blog</h4>
+                    <h4 class="ms_articleAndTips">{{title}}</h4>
+                    <h4 class="fs-2" 
+                        v-for="(subTitle, index) in subTitles" 
+                        :key="'subtitle '+index">
+
+                    <!-- inizio contenuto h4 -->
+                    {{subTitle}}
+                    <!-- fine contenuto h4 -->
+
+                    </h4>
                 </div>
             </div>
 
@@ -15,18 +23,18 @@
                     <div class="card left border-0">
                         <div class="contenitoreImg">
                             <div class="overlay dark"/>
-                            <img src="./../assets/img/artist-blog-01-480x356.jpeg" class="card-img-top" alt="img artist-blog-01">
+                            <img :src="require(`./../assets/img/${data.event1.image}.jpeg`)" class="card-img-top" :alt="`img ${data.event1.image}`">
                         </div>
                         <div class="card-body">
-                            <div class="ms_work mt-3">ARTIST</div>
-                            <h5 class="card-title mb-4">Brush Strokes Energize Trees in Paintings</h5>
+                            <div class="ms_work mt-3">{{data.event1.type}}</div>
+                            <h5 class="card-title mb-4">{{data.event1.title}}</h5>
                             <div class="ms_info">
                                 <i class="bi bi-calendar me-1"></i>
-                                <span>May, 15, 2020</span>
+                                <span>{{data.event1.date}}</span>
                             </div>
                             <div class="ms_info">
                                 <i class="bi bi-eye me-1"></i>
-                                <span>688 views</span>
+                                <span>{{data.event1.views}} views</span>
                             </div>
                         </div>
                     </div>
@@ -37,18 +45,18 @@
 
                         <div class="contenitoreImg">
                             <div class="overlay light"/>
-                            <img src="./../assets/img/artist-blog-02-500x680.jpg" class="card-img-top" alt="img artist-blog-02">
+                             <img :src="require(`./../assets/img/${data.mainEvent.image}.jpeg`)" class="card-img-top" :alt="`img ${data.mainEvent.image}`">
                         
                             <div class="card-body position-absolute bottom-0">
-                                <div class="ms_work text-white">ARTIST</div>
-                                <h5 class="card-title mb-4">Connection Between Self-Portrains and Identity</h5>
+                                <div class="ms_work text-white">{{data.mainEvent.type}}</div>
+                                <h5 class="card-title mb-4">{{data.mainEvent.title}}</h5>
                                 <div class="ms_info text-white">
                                     <i class="bi bi-calendar me-1"></i>
-                                    <span>May, 15, 2020</span>
+                                    <span>{{data.mainEvent.date}}</span>
                                 </div>
                                 <div class="ms_info text-white">
                                     <i class="bi bi-eye me-1"></i>
-                                    <span>397 views</span>
+                                    <span>{{data.mainEvent.views}} views</span>
                                 </div>
                             </div>
                         </div>
@@ -60,18 +68,18 @@
                     <div class="card right border-0">
                         <div class="contenitoreImg">
                             <div class="overlay dark"/>
-                            <img src="./../assets/img/artist-blog-03-480x356.jpg" class="card-img-top" alt="img artist-blog-03">
+                             <img :src="require(`./../assets/img/${data.event2.image}.jpeg`)" class="card-img-top" :alt="`img ${data.event2.image}`">
                         </div>
                         <div class="card-body">
-                            <div class="ms_work mt-3">ARTIST</div>
-                            <h5 class="card-title mb-4">Pocket-Sized Notebooks Hold Miniature Paintings</h5>
+                            <div class="ms_work mt-3">{{data.event2.type}}</div>
+                            <h5 class="card-title mb-4">{{data.event2.title}}</h5>
                             <div class="ms_info">
                                 <i class="bi bi-calendar me-1"></i>
-                                <span>May, 15, 2020</span>
+                                <span>{{data.event2.date}}</span>
                             </div>
                             <div class="ms_info">
                                 <i class="bi bi-eye me-1"></i>
-                                <span>603 views</span>
+                                <span>{{data.event2.views}} views</span>
                             </div>
                         </div>
                     </div>
@@ -95,6 +103,11 @@
 <script>
     export default {
         name: "MySection5",
+        props:{
+            "title": String,
+            "subTitles": Array,
+            "data": Object,
+        }
     }
 </script>
 
@@ -121,6 +134,10 @@
             display: inline;
             margin-right: 1rem;
             text-decoration: none;
+
+            &:hover{
+                color: $silver;
+            }
         }
 
         .ms_info.color{
@@ -182,13 +199,6 @@
                 margin-bottom: 0.5rem;
             }
         
-            a{
-                text-decoration: none;
-
-                &:hover{
-                    color: $silver;
-                }
-            }
         }
        
     }

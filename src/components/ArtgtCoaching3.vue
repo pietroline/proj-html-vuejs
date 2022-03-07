@@ -13,7 +13,7 @@
         <div class="row row-cols-1">
             <div class="col text-center position-relative">
                 <div class="ms_video_overlay">
-                    <img class="ms_video" src="./../assets/img/artist-video-poster.jpg" alt="artist-video-poster">
+                    <img class="ms_video" :src="require(`./../assets/img/${video.cover}.jpg`)" :alt="`img ${video.cover}`">
                     <a href="#">
                         <img class="position-absolute top-50 start-50 translate-middle" src="./../assets/img/icon-youtube-play.png" alt="icon-youtube-play">
                     </a>
@@ -25,7 +25,10 @@
 
 <script>
     export default {
-        name: "MyProva"
+        name: "MyProva",
+        props:{
+            "video": Object,
+        }
     }
 </script>
 

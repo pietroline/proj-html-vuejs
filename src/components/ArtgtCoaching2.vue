@@ -9,18 +9,15 @@
 
         <div class="row">
             <div class="col text-center">
-                <h4 class="ms_textStyle">I coach and mentor visual artists, like you, to Create Like You Mean It</h4>
-                <h4 class="ms_textAuthor">Martin Garrix</h4>
+                <h4 class="ms_textStyle">{{goal.quote.sentence}}</h4>
+                <h4 class="ms_textAuthor">{{goal.quote.author}}</h4>
             </div>
             <div class="col ms_textStyle">
-                <p class="fs-5">As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action. I help you get you back on track to being the productive, creative, meaaningful and authentic artist you truly want to be. I support artists in crafting and living a creative life as well as feeling good about themselves and their art.</p>
-                <p class="my-5 fs-5">As an artist and an educator for nearly 30 years, I understand  what it takes to create.</p>
+                <p class="fs-5">{{goal.paragraph}}</p>
+                <p class="my-5 fs-5">{{goal.Iam}}</p>
                 <MyBtn :type="'light'" :text="'Get started today'"/>
             </div>
         </div>
-        
-             
-       
         
     </section>
 </template>
@@ -31,6 +28,9 @@
 
     export default {
         name: "MySection2",
+        props:{
+            "goal": Object,
+        },
         components:{
             MyBtn,
         }
