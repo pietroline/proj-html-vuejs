@@ -140,7 +140,7 @@
 
             position: absolute;
             bottom: 40rem;
-            left: 90rem;
+            left: 85rem;
         }
     }
     

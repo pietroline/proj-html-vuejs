@@ -104,7 +104,7 @@
 
             position: absolute;
             bottom: 20rem;
-            right: 90rem;
+            right: 85rem;
         }
     }
     
