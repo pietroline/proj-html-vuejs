@@ -5,6 +5,7 @@
     <MyJumbotron/>
     <MySection1 :data="jsonData.sectionArtigtCoaching"/>
     <MySection2/>
+     <MyProva/>
     <MySection3 :data="jsonData.sectionTestimonials"/>
     <MySection4 :data="jsonData.sectionArtistCoaching"/>
     <MySection5/>
@@ -22,6 +23,7 @@
   import MyJumbotron from "./components/MyJumbotron.vue";
   import MySection1 from "./components/MySection1.vue";
   import MySection2 from "./components/MySection2.vue";
+  import MyProva from "./components/MyProva.vue";
   import MySection3 from "./components/MySection3.vue";
   import MySection4 from "./components/MySection4.vue";
   import MySection5 from "./components/MySection5.vue";
@@ -35,6 +37,7 @@
       MyJumbotron,
       MySection1,
       MySection2,
+      MyProva,
       MySection3,
       MySection4,
       MySection5,
