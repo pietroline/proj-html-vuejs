@@ -3,13 +3,13 @@
     
     <MyHeader :menuHeader="jsonData.menuHeader.menu" :icons="jsonData.menuHeader.icons"/>
     <MyJumbotron/>
-    <MySection1 :data="jsonData.sectionArtigtCoaching"/>
-    <MySection2/>
-     <MyProva/>
-    <MySection3 :data="jsonData.sectionTestimonials"/>
-    <MySection4 :data="jsonData.sectionArtistCoaching"/>
-    <MySection5/>
-    <MySection6 :data="jsonData.sectionUpcomingEvents"/>
+    <ArtgtCoaching1 :data="jsonData.sectionArtigtCoaching"/>
+    <ArtgtCoaching2/>
+    <ArtgtCoaching3/>
+    <UsersTestimonials :data="jsonData.sectionTestimonials"/>
+    <ArtistCoaching :data="jsonData.sectionArtistCoaching"/>
+    <ArticleAndTips/>
+    <UpcomingEvent :data="jsonData.sectionUpcomingEvents"/>
     <MyFooter :menuFooter="jsonData.menuFooter" />
 
   </div>
@@ -21,13 +21,13 @@
 
   import MyHeader from "./components/MyHeader.vue";
   import MyJumbotron from "./components/MyJumbotron.vue";
-  import MySection1 from "./components/MySection1.vue";
-  import MySection2 from "./components/MySection2.vue";
-  import MyProva from "./components/MyProva.vue";
-  import MySection3 from "./components/MySection3.vue";
-  import MySection4 from "./components/MySection4.vue";
-  import MySection5 from "./components/MySection5.vue";
-  import MySection6 from "./components/MySection6.vue";
+  import ArtgtCoaching1 from "./components/ArtgtCoaching1.vue";
+  import ArtgtCoaching2 from "./components/ArtgtCoaching2.vue";
+  import ArtgtCoaching3 from "./components/ArtgtCoaching3.vue";
+  import UsersTestimonials from "./components/UsersTestimonials.vue";
+  import ArtistCoaching from "./components/ArtistCoaching.vue";
+  import ArticleAndTips from "./components/ArticleAndTips.vue";
+  import UpcomingEvent from "./components/UpcomingEvent.vue";
   import MyFooter from "./components/MyFooter.vue";
 
   export default {
@@ -35,13 +35,13 @@
     components: {
       MyHeader,
       MyJumbotron,
-      MySection1,
-      MySection2,
-      MyProva,
-      MySection3,
-      MySection4,
-      MySection5,
-      MySection6,
+      ArtgtCoaching1,
+      ArtgtCoaching2,
+      ArtgtCoaching3,
+      UsersTestimonials,
+      ArtistCoaching,
+      ArticleAndTips,
+      UpcomingEvent,
       MyFooter,
     },
     data(){
