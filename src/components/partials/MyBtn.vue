@@ -1,5 +1,5 @@
 <template>
-    <button class="btn px-4 py-2" :class="type=='dark'?'dark':'light'">
+    <button class="btn px-4 py-2" :class="{'dark':type=='dark', 'light':type=='light'}">
         {{text}}
          <i v-if="bootstrapIcon != null" :class="bootstrapIcon"></i>
     </button>
