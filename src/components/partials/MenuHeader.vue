@@ -35,6 +35,10 @@
         margin-left: 0.3rem;
     }
 
+    ul li{
+        font-size: 0.9rem
+    }
+
     ul li:hover a span{
         color: $silver;
     }

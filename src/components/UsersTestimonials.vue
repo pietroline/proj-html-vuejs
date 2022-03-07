@@ -18,16 +18,16 @@
                 <div class="col card-group position-relative">
 
                     <div class="card mx-5" v-for="(testimonial, index) in data.testimonials" :key="'testimonial ' + index">
-                        <div class="card-body" :class="active==index?'opacity-100':'opacity-25'">
+                        <div class="card-body" :class="active==index?'opacity-100':'opacity-25'" @click="spostaIndice(index)">
                             <h5 class="card-title">{{testimonial.title}}</h5>
                             <p class="card-text">{{testimonial.paragraph}}</p>
-                            <a href="#" class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
                                 <img class="rounded-circle" :src="require(`./../assets/img/${testimonial.user.image}.jpg`)" :alt="`img ${testimonial.user.image}`">
                                 <div class="ms-4 ms_author">
                                     <div>{{testimonial.user.name}}</div>
                                     <div class="mt-3">{{testimonial.user.work}}</div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
@@ -99,6 +99,11 @@
                     this.active = stringaIndice;
                 }
 
+            },
+
+            spostaIndice(indice){
+                //se viene premuta una card spedifica...
+                this.active = indice;
             }
         }
     }
@@ -116,6 +121,7 @@
         }
 
         .card{
+            cursor: pointer;
             
             img{
                 width: 5rem;
