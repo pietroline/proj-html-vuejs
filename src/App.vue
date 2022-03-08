@@ -3,13 +3,15 @@
     
     <MyHeader :menuHeader="jsonData.menuHeader.menu" :icons="jsonData.menuHeader.icons"/>
     <MyJumbotron/>
-    <ArtgtCoaching1 :title="jsonData.sectionArtigtCoaching.title" :subTitles="jsonData.sectionArtigtCoaching.subTitles" :data="jsonData.sectionArtigtCoaching.contents.helpYou"/>
-    <ArtgtCoaching2 :goal="jsonData.sectionArtigtCoaching.contents.goal"/>
-    <ArtgtCoaching3 :video="jsonData.sectionArtigtCoaching.contents.video"/>
-    <UsersTestimonials :data="jsonData.sectionTestimonials"/>
-    <ArtistCoaching :data="jsonData.sectionArtistCoaching"/>
-    <ArticleAndTips :title="jsonData.articleAndTips.title" :subTitles="jsonData.articleAndTips.subTitles" :data="jsonData.articleAndTips.contents"/>
-    <UpcomingEvent :data="jsonData.sectionUpcomingEvents"/>
+    <main>
+      <ArtgtCoaching1 :title="jsonData.sectionArtigtCoaching.title" :subTitles="jsonData.sectionArtigtCoaching.subTitles" :data="jsonData.sectionArtigtCoaching.contents.helpYou"/>
+      <ArtgtCoaching2 :goal="jsonData.sectionArtigtCoaching.contents.goal"/>
+      <ArtgtCoaching3 :video="jsonData.sectionArtigtCoaching.contents.video"/>
+      <UsersTestimonials :data="jsonData.sectionTestimonials"/>
+      <ArtistCoaching :data="jsonData.sectionArtistCoaching"/>
+      <ArticleAndTips :title="jsonData.articleAndTips.title" :subTitles="jsonData.articleAndTips.subTitles" :data="jsonData.articleAndTips.contents"/>
+      <UpcomingEvent :data="jsonData.sectionUpcomingEvents"/>
+    </main>
     <MyFooter :menuFooter="jsonData.menuFooter" />
 
   </div>
